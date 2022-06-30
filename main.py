@@ -1,12 +1,8 @@
 import time
-import platform
 import numpy as np
-import matplotlib.pyplot as plt
-from tqdm import tqdm
 from joblib import Parallel, delayed
 from multiprocessing import cpu_count
 from copy import deepcopy
-from scipy.special import expit
 
 class ProbSAT(object):
     def __init__(self, filename, max_tries=1000, max_flips=10000):
